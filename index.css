@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: #BF9877;
 }
 
 /* HEADER */
 
  header {
-   background-color: #AA8A60;
+   background-color:  #AB8463;
    width: 100%;
    height: 20vh;
    display: flex;
@@ -21,9 +21,9 @@ body {
  }
 
  .title {
-   margin: 0;
-   font-family: 'Prompt', sans-serif;
+   margin: 0px;
    font-size: 50px;
+   max-height: 95%;
  }
 
  .links {
@@ -39,7 +39,17 @@ body {
  a {
    text-decoration: none;
    color: black;
+   transition-duration: 0.4s;
  }
+
+ a:hover {
+   transition-duration: 0.4s;
+   text-shadow: 0px 0px 10px black;
+   transform: scale(1.5) rotate(360deg);
+
+ }
+
+ /* ANPASSAD RUTA */
 
  @media (max-width: 700px) {
    .links {
@@ -59,12 +69,20 @@ body {
 
 /* MAIN */
 
- img {
+ main img {
    width: 15%;
    margin: 15px;
    min-width: 150px;
+   transition-duration: 0.5s;
    flex: auto;
  }
+
+main img:hover {
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 55px 25px rgba(0,0,0,0.75);
+  transform: scale(1.1);
+  
+}
 
 .flexbox {
   display: flex;
